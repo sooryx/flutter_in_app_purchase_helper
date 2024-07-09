@@ -41,8 +41,10 @@ class _PaymentScreenState extends State<PaymentScreen> {
     super.initState();
     ///Initialization (initState): Initializes FlutterInAppPurchaseHelper with context and sets up product IDs
     /// and callbacks for success and error handling.
-    _flutterInAppPurchaseHelper = FlutterInAppPurchaseHelper(context: context);
+    _flutterInAppPurchaseHelper = FlutterInAppPurchaseHelper();
     _flutterInAppPurchaseHelper.initialize(
+      ///Mention your productIds here after configuring in playconsole or appstore
+
       productIds: {'PRODUCT_ID_1', 'PRODUCT_ID_2'},
       onProductsFetched: (products) {
         setState(() {
