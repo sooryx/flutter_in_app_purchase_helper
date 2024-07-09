@@ -9,9 +9,6 @@ class PaymentScreen extends StatefulWidget {
 
   const PaymentScreen({super.key});
 
-
-
-
   @override
   _PaymentScreenState createState() => _PaymentScreenState();
 }
@@ -26,7 +23,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
   @override
   void initState() {
     super.initState();
-    _flutterInAppPurchaseHelper = FlutterInAppPurchaseHelper(context: context);
+    _flutterInAppPurchaseHelper = FlutterInAppPurchaseHelper();
     _flutterInAppPurchaseHelper.initialize(
       productIds: {'PRODUCT_ID_1', 'PRODUCT_ID_2'},
       onProductsFetched: (products) {
@@ -125,7 +122,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
             } else {
               _flutterInAppPurchaseHelper.buyProduct(
                 productDetails,
-                    (error) {
+                (error) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(content: Text('Error: $error')),
                   );
@@ -142,6 +139,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
 
 /// Widget for displaying a plan card with title, description, and icon.
 class PlanCard extends StatelessWidget {
+  ///Constructor for the PlanCard
   const PlanCard({
     super.key,
     required this.title,
@@ -206,8 +204,10 @@ class PlanCard extends StatelessWidget {
               ),
             ),
           ),
-          if (isActive) Container(), // Placeholder containers, remove if not needed
-          if (isRecommended) Container(), // Placeholder containers, remove if not needed
+          if (isActive) Container(),
+          // Placeholder containers, remove if not needed
+          if (isRecommended) Container(),
+          // Placeholder containers, remove if not needed
         ],
       ),
     );
