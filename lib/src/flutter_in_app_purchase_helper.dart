@@ -10,7 +10,7 @@ class FlutterInAppPurchaseHelper {
   List<PurchaseDetails> _purchases = [];
   final BuildContext context;
 
-  FlutterInAppPurchaseHelper({required this.context});
+    FlutterInAppPurchaseHelper({required this.context});
 
   Future<void> initialize({
     required Set<String> productIds,
