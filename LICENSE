@@ -46,7 +46,3 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 9. Miscellaneous.
 
    This License constitutes the entire agreement between the parties with respect to the Work licensed here. There are no understandings, agreements, or representations with respect to the Work not specified here. Licensor shall not be bound by any additional provisions that may appear in any communication from You. This License may not be modified without the mutual written agreement of the Licensor and You.
-
----
-
-The Flutter In-App Purchase Helper includes functionality from the `in_app_purchase` package.
