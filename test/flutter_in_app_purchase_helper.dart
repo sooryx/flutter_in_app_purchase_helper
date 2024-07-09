@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 
@@ -7,7 +8,7 @@ class FlutterInAppPurchaseHelper {
   late StreamSubscription<List<PurchaseDetails>> _subscription;
   bool _available = true;
   List<ProductDetails> _products = [];
-  List<PurchaseDetails> _purchases = [];
+  final List<PurchaseDetails> _purchases = [];
   final BuildContext context;
 
   FlutterInAppPurchaseHelper({required this.context});
@@ -28,7 +29,9 @@ class FlutterInAppPurchaseHelper {
       }, onDone: () {
         _subscription.cancel();
       }, onError: (error) {
-        print('Error: $error');
+        if (kDebugMode) {
+          print('Error: $error');
+        }
         onPurchaseError(error.toString());
       });
     } else {
