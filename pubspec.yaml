@@ -1,0 +1,20 @@
+name: flutter_in_app_purchase_helper
+description: "Flutter In-App Purchase Helper provides a streamlined solution for integrating in-app purchases into Flutter applications. This document outlines how to set up and use the helper effectively."
+version: 0.0.1
+homepage: "https://github.com/sooryx/In-App-Purchases-Services"
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  in_app_purchase: ^3.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
