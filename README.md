@@ -15,17 +15,17 @@ Flutter In-App Purchase Helper provides a streamlined solution for integrating i
 
 - **Initialization (`initState`)**: Initializes FlutterInAppPurchaseHelper with context and sets up product IDs and callbacks for success and error handling.
 
-  ![Initialization Example](https://github.com/sooryx/flutter_in_app_purchase_helper/blob/main/image5.png)
-  ![Initialization Example](https://github.com/sooryx/flutter_in_app_purchase_helper/blob/main/image4.png)
+  ![Initialization Example](https://raw.githubusercontent.com/sooryx/flutter_in_app_purchase_helper/main/image5.png)
+  ![Initialization Example](https://raw.githubusercontent.com/sooryx/flutter_in_app_purchase_helper/main/image4.png)
 
 - **Plan Selection (`_togglePlanSelection`)**: Handles selection/deselection of plans.
 
-  ![Plan Selection Example](https://github.com/sooryx/flutter_in_app_purchase_helper/blob/main/image2.png)
+  ![Plan Selection Example](https://raw.githubusercontent.com/sooryx/flutter_in_app_purchase_helper/main/image2.png)
 
 - **Fetching and Showing Products (`fetchAndShowProducts`)**: Retrieves product information from the store using FlutterInAppPurchaseHelper and displays them in the UI, ensuring accurate pricing and details.
 
-  ![Fetching Products Example](https://github.com/sooryx/flutter_in_app_purchase_helper/blob/main/image3.png)
+  ![Fetching Products Example](https://raw.githubusercontent.com/sooryx/flutter_in_app_purchase_helper/main/image3.png)
 
 - **Purchase Button**: Triggers purchase through `_inAppPurchaseHelper.buyProduct` function when a plan is selected and handles errors based on the purchase.
 
-  ![Purchase Button Example](https://github.com/sooryx/flutter_in_app_purchase_helper/blob/main/image1.png)
+  ![Purchase Button Example](https://raw.githubusercontent.com/sooryx/flutter_in_app_purchase_helper/main/image1.png)
